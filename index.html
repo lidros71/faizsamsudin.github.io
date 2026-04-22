@@ -1,0 +1,52 @@
+!DOCTYPE html
+html lang=en
+head
+    meta charset=UTF-8
+    meta name=viewport content=width=device-width, initial-scale=1.0
+    titleTest Pagetitle
+    style
+        body {
+            font-family system-ui, sans-serif;
+            line-height 1.6;
+            max-width 600px;
+            margin 40px auto;
+            padding 20px;
+            background-color #f4f4f9;
+        }
+        .card {
+            background white;
+            padding 2rem;
+            border-radius 8px;
+            box-shadow 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { color #333; }
+        .status { color #2ecc71; font-weight bold; }
+    style
+head
+body
+
+    div class=card
+        h1HTML Test Pageh1
+        pIf you can see this, your HTML file is loading correctly.p
+        pStatus span class=statusOnline & Functionalspanp
+        
+        hr
+        
+        h3Quick Checklisth3
+        ul
+            liUTF-8 Encoding ✅li
+            liCSS Styling ✅li
+            liResponsive Viewport ✅li
+        ul
+
+        button onclick=displayDate()Click for Timestampbutton
+        p id=demop
+    div
+
+    script
+        function displayDate() {
+            document.getElementById('demo').innerHTML = Last tested  + new Date().toLocaleTimeString();
+        }
+    script
+body
+html
